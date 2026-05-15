@@ -149,8 +149,7 @@ void Vehicle::refuel(double amount) {
 // Car member function implementations
 // ----------------------------------------------------------------
 // TODO: Implement Car constructor (chain to Vehicle)
-Car::Car(std::string make, int year, double fuelLevel, int numDoors)
-   : Vehicle(make, year, fuelLevel), numDoors(numDoors) {}
+Car::Car(std::string make, int year, double fuelLevel, int numDoors) : Vehicle(make, year, fuelLevel), numDoors(numDoors) {}
 // TODO: Implement getNumDoors()
 int Car::getNumDoors() const {
    return numDoors;
@@ -169,8 +168,7 @@ std::string Car::describe() const {
 // Truck member function implementations
 // ----------------------------------------------------------------
 // TODO: Implement Truck constructor (chain to Vehicle)
-Truck::Truck(std::string make, int year, double fuelLevel, double payloadTons)
-   : Vehicle(make, year, fuelLevel), payloadTons(payloadTons) {}
+Truck::Truck(std::string make, int year, double fuelLevel, double payloadTons) : Vehicle(make, year, fuelLevel), payloadTons(payloadTons) {}
 // TODO: Implement getPayloadTons()
 double Truck::getPayloadTons() const {
    return payloadTons;
